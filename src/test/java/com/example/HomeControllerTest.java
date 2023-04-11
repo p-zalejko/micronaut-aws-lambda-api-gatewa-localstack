@@ -39,7 +39,7 @@ public class HomeControllerTest {
         request.setPath("/hello");
         AwsProxyResponse response = handler.handleRequest(request, lambdaContext);
         assertEquals(200, response.getStatusCode());
-        assertEquals("{\"message\":\"Hello ?\"}",  response.getBody());
+        assertEquals("{\"message\":\"Hello ?\"}", response.getBody());
     }
 
     @Test
@@ -50,10 +50,10 @@ public class HomeControllerTest {
         AwsProxyRequest request = new AwsProxyRequest();
         request.setHttpMethod("GET");
         request.setPath("/hello");
-        request.setMultiValueQueryStringParameters(queryParams );
+        request.setMultiValueQueryStringParameters(queryParams);
         AwsProxyResponse response = handler.handleRequest(request, lambdaContext);
         assertEquals(200, response.getStatusCode());
-        assertEquals("{\"message\":\"Hello foo\"}",  response.getBody());
+        assertEquals("{\"message\":\"Hello foo\"}", response.getBody());
     }
 
     @Test
@@ -68,6 +68,6 @@ public class HomeControllerTest {
                 """);
         AwsProxyResponse response = handler.handleRequest(request, lambdaContext);
         assertEquals(200, response.getStatusCode());
-        assertEquals("{\"message\":\"Hello foo\"}",  response.getBody());
+        assertEquals("{\"message\":\"Hello foo\"}", response.getBody());
     }
 }
