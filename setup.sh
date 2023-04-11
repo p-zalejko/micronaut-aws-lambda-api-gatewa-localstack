@@ -2,7 +2,7 @@
 #
 # this script comes from https://gist.github.com/crypticmind/c75db15fd774fe8f53282c3ccbe3d7ad
 #
-# I few adjustments were done, added API configuration for GET and POST methods
+# A few adjustments were made, added API configuration for GET and POST methods
 #
 API_NAME=example0000
 REGION=us-east-1
