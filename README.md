@@ -3,6 +3,7 @@
 - Micronaut
 - Java 17
 - Native image
+- Maven
 - AWS Lambda
 - AWS API Gateway
 - Docker
