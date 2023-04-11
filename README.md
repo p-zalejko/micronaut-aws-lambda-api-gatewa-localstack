@@ -8,6 +8,12 @@
 - AWS API Gateway
 - Docker
 
+## What works:
+
+- GET requests
+- GET requests with query params
+- POST requests
+
 # Resources
 
 Localstack https://localstack.cloud/
